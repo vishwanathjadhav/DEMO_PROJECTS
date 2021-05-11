@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img
+        src="./images/bike.jpg"
+        width="600px"
+        id="FullImage"
+    /><br/>
+
+    <!--Image events are catched with "onclick"-->
+    <img src="./images/cars.jpg" width=200px onclick="ImageEvent.src=src">
+    <img src="./images/bike.jpg" width=200px onclick="ImageEvent.src=src"/>
+    <img src="./images/football.png" width=200px onclick="ImageEvent.src=src"/>
+</body>
+<script>
+    // Get html as a object using DOM.
+    var ImageEvent = document.getElementById("FullImage")
+</script>
+</html>
