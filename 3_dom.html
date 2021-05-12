@@ -11,7 +11,7 @@
 <body>
     <h1>Lorem ipsum dolor sit amet consectetur.</h1>
     <h1 class="cls">Lorem ipsum dolor sit amet consectetur.</h1>
-    <b class="cls">Lorem ipsum dolor sit amet consectetur.</b>
+    <b class="cls">Lorem ipsum dolor sit amet consectetur.</b><br />
     <i class="cls">Lorem ipsum dolor sit amet consectetur.</i>
     <p class="cls">Lorem ipsum dolor sit amet consectetur.</p>
 </body>
@@ -25,6 +25,8 @@
 
     var elms_obj = document.getElementsByClassName("cls");
     console.log("Show class:", elms_obj);
+    elms_obj[2].style.color = "blue"
+    elms_obj.style.color = "blue"
 </script>
 
 </html>
