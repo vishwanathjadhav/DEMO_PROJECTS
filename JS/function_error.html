@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input ID="Demo">
+    <button onclick="validate()">Sumbit</button>
+    <script>
+        var els = document.getElementById("Demo");
+        function validate(){
+            document.write(els);
+            var name_me = els.value;
+            try{
+                if (name_me == "") throw "Value is empty...!!!";
+                document.write(els.value);
+            }catch(error){
+                document.write(error);
+                True
+            }
+        }
+        console.log(els.value)
+    </script>
+</body>
+</html>
