@@ -13,7 +13,7 @@
             box-shadow: 5px 5px grey;
             font-size: xx-large solid black;
             font-style: italic;
-            padding-right: px;
+            padding-right: 1px;
         }
 
         .row {
@@ -78,6 +78,7 @@
                 <button value='+' calss='operator'>+</button>
                 <button value='=' calss='operator'>=</button>
                 <button value='C' calss='operator'>Clear</button>
+                <button value='backspace' calss='operator'>backspace</button>
             </div>
         </div>
         <div>
@@ -103,6 +104,10 @@
                     } else if (clickedButtonValue === 'C') {
                         // clear everything on display
                         display.value = '';
+                    } else if (clickedButtonValue === 'backspace') {
+                        // Clear one element from the end
+                        display.value = display.value.substring(0, display.value.length - 1);
+                        console.log(display.value)
                     } else {
                         // otherwise concatenate it to the display
                         display.value += clickedButtonValue;
