@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <style>
+        input {
+            width: 145px;
+            height: 60px;
+        }
         button {
             width: 145px;
             height: 60px;
-            box-shadow: 5px 5px grey;
             font-size: xx-large solid black;
             font-style: italic;
-            padding-right: 1px;
+            padding-left: 1px;
         }
 
         .row {
@@ -29,12 +32,11 @@
             border: 5px;
             width: 590px;
             height: 80px;
-            box-shadow: 5px 5px grey;
             padding-bottom: 40px;
             box-sizing: border-box;
             background-color: #e6edee;
             padding: 10px;
-            font-size: 2rem bold black;
+            /*font-size: 2rem bold black;*/
         }
 
         body {
@@ -51,37 +53,37 @@
 </head>
 
 <body>
-    <div class="calculator">
+    <tb class="calculator">
         <input type="text" class=display disabled>
-        <div class="keys">
-            <div class="row">
+        <tr class="keys">
+            <tr class="row">
                 <button value=7>7</button>
                 <button value=8>8</button>
                 <button value=9>9</button>
                 <button value='/' calss='operator'>/</button>
-            </div>
-            <div class="row">
+            </tr>
+            <tr class="row">
                 <button value=6>6</button>
                 <button value=5>5</button>
                 <button value=4>4</button>
                 <button value='*' calss='operator'>*</button>
-            </div>
-            <div class="row">
+            </tr>
+            <tr class="row">
                 <button value=3>3</button>
                 <button value=2>2</button>
                 <button value=1>1</button>
                 <button value='-' calss='operator'>-</button>
-            </div>
-            <div class="row">
+            </tr>
+            <tr class="row">
                 <button value=0>0</button>
                 <button value=.>.</button>
                 <button value='+' calss='operator'>+</button>
                 <button value='=' calss='operator'>=</button>
                 <button value='C' calss='operator'>Clear</button>
                 <button value='backspace' calss='operator'>Delete</button>
-            </div>
-        </div>
-        <div>
+            </tr>
+        </tr>
+    </tb>
 
             <script>
                 const buttons = document.querySelectorAll("button");
