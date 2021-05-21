@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                // Hide after click
+                $("P").hide(6000);   // Added interval of 6sec = 6000ms.
+            });
+
+            $("#show").click(function () {
+                // Hide after click
+                $("P").show(6000);   // Added interval of 6sec = 6000ms.
+            });
+
+            $(".hide-show").click(function () {
+                // Hide after click
+                $("P").toggle(6000);   // Added interval of 6sec = 6000ms.
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <p>
+        1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti nihil soluta recusandae placeat totam,
+        excepturi
+        velit iure illum sequi id quo voluptatibus ab aliquid ipsum, minima accusamus quam perspiciatis doloremque.
+    </p>
+    <button id=hide>Hide</button>
+    <button id=show>Show</button>
+
+    <button class="hide-show">Hide / Show</button>
+</body>
+
+</html>
