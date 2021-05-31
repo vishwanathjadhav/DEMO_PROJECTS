@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page {
+            background-color: rgb(216, 239, 247);
+            color: rgb(211, 240, 235);
+            text-align: center;
+            width: 1400px;
+            height: 2000px;
+        }
+
+        .header {
+            background-color: rgb(255, 235, 156);
+            color: rgb(241, 60, 121);
+            text-align: center;
+            width: 1400px;
+            height: 100px;
+            margin-left: 0%;
+        }
+        .container {
+            width: 1400px;
+            height: 1000px;
+            border: 2px solid black;
+        }
+
+        .images {
+            position:absolute;
+            width: 800px;
+            height: 500px;
+            margin-top: 5px;
+            margin-left: 5px;
+            text-align: left;
+        }
+        .videos {
+            position: absolute;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            right: 2px;
+            bottom: 2px;
+            left: 2px;
+            top: 2px;
+            min-width: 100%;
+            min-height: 100%;
+            width: 600px;
+            height: 1000px;
+            /*z-index: -100;
+            background-size: cover;
+            overflow: hidden;*/
+        }
+        h1 {
+            animation: anim 10s infinite;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 5px;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        @keyframes anim {
+            from {
+                margin-left: 100%;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            to {
+                margin-left: 0%;
+                margin-right: auto;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <h1 color=red>Government Of India Welcomes You On a Unified Portal</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Links">Links</a></li>
+                <li><a href="#Career">Career Place</a></li>
+                <li><a href="./contact_us.html">Contact Us</a></li>
+                <li><a href="#About">About Us</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="images" ;>
+                <img src="./Assets/Images/Quasar.jpg" />
+            </div>
+            <div class="videos">
+                <video width="790" height="800" controls>
+                    <source src="Assets/Video/Supernova.mp4" type="video/mp4">
+                    Your Browser Do Not Support
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        <div class="loginpage">
+        </div>
+        <div class="Quick-Links">
+        </div>
+        <div class="Notifications">
+
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+    -->
+</body>
+
+</html>

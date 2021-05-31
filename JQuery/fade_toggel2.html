@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="./../images/bike.jpg" width="400px" id="img1" style="display: none" />
+
+    <button id="inout">FadeInOut</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#inout").click(function () {
+                $("#img1").fadeToggle(4000);
+            });
+        });
+    </script>
+</body>
+
+</html>
+© 2021 GitHub, Inc.

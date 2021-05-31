@@ -1,0 +1,8 @@
+https://www.exams.unipune.ac.in
+
+1. http - protocol [set of rules]
+2. s - S.S.L
+3. www - web platform
+4. exams - subdomain
+5. unipune - maindomain
+6. ac -
